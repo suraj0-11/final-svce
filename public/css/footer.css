@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  font-size: 1.2rem;
+  font-family: 'SF Pro Display', sans-serif;
+                                                
+}
+
+.info-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.info-section {
+  width: calc(25% - 20px);
+  margin-bottom: 10px;
+}
+
+.info-section h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.follow-us {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+}
+
+/* Dealing with the footer */
+.info-section p a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media queries for responsive design */
+
+/* Styles for tablet screens */
+@media (max-width: 768px) {
+  .info-section {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 480px) {
+  .info-categories {
+    justify-content: center;
+  }
+
+  .info-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-icons .icon {
+    margin: 10px;
+  }
+}

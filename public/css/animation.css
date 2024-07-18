@@ -1,0 +1,107 @@
+.Transition-Left .text-holder {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.Transition-Left .text-holder.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Card Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Media queries for responsiveness */
+
+/* Tablets and small desktops */
+@media (max-width: 992px) {
+  .moto {
+    font-size: 3rem;
+  }
+
+  .card-heading {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-info {
+    font-size: 0.8rem;
+  }
+
+  .Accreditation-container {
+    padding: 1rem;
+  }
+
+  .Accreditation-slide {
+    height: 96px;
+    width: 96px;
+  }
+}
+
+/* Tablets and large smartphones */
+@media (max-width: 768px) {
+  .moto {
+    font-size: 2.5rem;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .card-info {
+    font-size: 0.7rem;
+  }
+
+  .Accreditation-container {
+    padding: 0.5rem;
+  }
+
+  .Accreditation-slide {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 576px) {
+  .moto {
+    font-size: 2rem;
+  }
+
+  .card-heading {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+  }
+
+  .card-info {
+    font-size: 0.6rem;
+  }
+
+  .Accreditation-container {
+    padding: 0.25rem;
+  }
+
+  .Accreditation-slide {
+    height: 48px;
+    width: 48px;
+  }
+}

@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  aspect-ratio: 1;
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 200ms linear;
+}
+
+.courses-section h1 {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cards_wrapper {
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.cards_wrapper button {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px rgba(0 0 0 / 20%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.cards_wrapper button:hover {
+  background-color: #ccc;
+  box-shadow: 1px 1px 12px rgba(0 0 0 / 30%);
+}
+
+.cards_wrapper button:active {
+  background-color: gray;
+}
+
+.cards_wrapper button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.prev {
+  left: -2rem;
+  color: #ffffff; 
+    background-color: #0088cc  !important;
+
+}
+
+
+
+.next {
+  right: -2rem;
+  color: #ffffff; 
+    background-color: #0088cc  !important;
+}
+
+.cards {
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards .card {
+  display: inline-block;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card:hover > img {
+  transform: scale(1.1);
+}
+
+.card:hover > div {
+  background: linear-gradient(to bottom, rgba(0 0 0 / 10%), rgba(0 0 0 / 70%));
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.card > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0 0 0 / 0%), rgba(0 0 0 / 60%));
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1rem;
+  transition: all 200ms linear;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 10px;
+  /* Add additional styles as needed */
+}
+
+.card-subtitle {
+  font-size: 20px;
+  color: #ffffff; /* Add additional styles as needed */
+}
+
+/* Let's make it responsive */
+@media only screen and (max-width: 786px) {
+  .wrapper {
+    width: 95% !important;
+  }
+
+  img,
+  .card {
+    aspect-ratio: 16/9;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .prev {
+    left: 1rem;
+    padding: 0.8rem !important;
+  }
+
+  .next {
+    right: 1rem;
+    padding: 0.8rem !important;
+  }
+}

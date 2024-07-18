@@ -1,0 +1,269 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.aca-img {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.aca-bgimg {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aca-navbar {
+  position: sticky;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  z-index: 9;
+  padding: 10px 0;
+}
+
+#aca-navLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aca-navLists {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.aca-navLists a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.aca-navLists:hover {
+  background-color: #0088cc;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* iPad mini specific (768x1024) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .aca-navLists a {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* For Surface Duo and similar dual-screen devices */
+@media (min-width: 540px) and (max-width: 720px) and (orientation: portrait),
+  (min-width: 720px) and (max-width: 1114px) and (orientation: landscape) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* For foldable devices in folded state */
+@media (max-width: 320px) {
+  /* Removed .aca-navbar top positioning */
+}
+
+/* Base styles */
+body {
+  font-family: "SF Pro Display", sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Article wrapper */
+.article-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 2rem;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #000;
+  grid-column: 1 / -1;
+}
+
+/* Side navigation */
+.side-nav {
+  background-color: #f0f0f0;
+  grid-column: 1 / 2;
+  grid-row: 2 / span 2;
+}
+
+.side-nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav-item {
+  margin-bottom: 1rem;
+}
+
+.side-nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  transition: opacity 0.3s ease;
+}
+
+.side-nav-item a:hover {
+  opacity: 0.7;
+}
+
+/* Main content area */
+.main-content {
+  grid-column: 2 / -1;
+}
+
+/* Subhead */
+.subhead {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+/* Article content */
+.article-content {
+  margin-bottom: 2rem;
+}
+
+.article-paragraph {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  border-left: 2px solid #000;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Article quote */
+.article-quote {
+  border: 1px solid #000;
+  padding: 2rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Feature image */
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .article-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .side-nav {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .main-content {
+    grid-column: 1 / -1;
+  }
+}
+.side-nav {
+  background-color: #f0f0f0;
+  grid-column: 1 / 2;
+  grid-row: 2 / span 2;
+}
+
+.side-nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.side-nav-item {
+  margin-bottom: 1rem;
+}
+
+.side-nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  transition: opacity 0.3s ease;
+}
+
+.side-nav-item a:hover {
+  opacity: 0.7;
+}
+
+.side-nav-header {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2em;
+  /* margin-bottom:rem; */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+
+.side-nav hr {
+  /* margin: 1rem 0; Adjust the margin around horizontal lines */
+  border: none;
+  border-top: 1px solid #ccc; /* Style the horizontal line */
+}
