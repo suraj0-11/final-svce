@@ -110,12 +110,15 @@ html {
 }
 
 .cul-container {
+  margin-top: 25vh;
   display: flex;
-  width: 150vw; /* 5 cards * 30vw each */
+  width: 160vw; /* Increased to accommodate spacing */
   height: 100vh;
+  padding: 0 2vw; /* Added padding for outer spacing */
 }
+
 .cul-slide {
-  width: 30vw;
+  width: 28vw; /* Slightly reduced to accommodate spacing */
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -125,36 +128,53 @@ html {
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 1vw; /* Added margin for spacing between cards */
+  border-radius: 20px; /* Added border-radius */
+  background-color: #111; /* Dark background for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.cul-slide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 136, 204, 0.2);
+}
+
 .cul-slide:nth-child(even) {
   background-color: #0088cc;
 }
+
 .cul-heading {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #fff;
 }
+
 .cul-subheading {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #ccc;
 }
+
 .cul-content {
   width: 100%;
   height: 60%;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+
 .cul-content img,
 .cul-content video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
+
 .cul-play-pause-btn {
   position: absolute;
   bottom: 20px;
@@ -170,8 +190,13 @@ html {
   align-items: center;
   transition: background 0.3s ease;
 }
+
 .cul-play-pause-btn svg {
   width: 30px;
   height: 30px;
   fill: #0088cc;
+}
+
+.cul-play-pause-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
