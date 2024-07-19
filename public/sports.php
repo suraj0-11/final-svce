@@ -22,7 +22,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
             background-color: var(--background-color);
             color: var(--text-color);
             line-height: 1.6;
@@ -37,22 +37,26 @@
             max-width: 1800px;
             margin: 0 auto;
             padding: 20px;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         /* Sports heading section */
         .sports-heading-section {
-            background-color: var(--primary-color);
-            padding: 20px 0;
+            background-color: white;
+            /* padding: 20px 0; */
             margin-bottom: 30px;
             text-align: center;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         .sports-heading-section h1 {
             font-size: 3rem;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 5px;
+            /* letter-spacing: 5px; */
             margin: 0;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            color: black;
         }
 
         /* Sports container */
@@ -64,6 +68,7 @@
             margin-bottom: 40px;
             overflow: hidden;
             transition: transform 0.3s ease-out;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         .sports-container:hover {
@@ -73,6 +78,8 @@
         /* Alternating layout */
         .sports-container.reverse {
             flex-direction: row-reverse;
+            background-color: white;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         /* Sports image */
@@ -109,11 +116,13 @@
             flex: 2;
             padding: 20px;
             border-left: 4px solid var(--primary-color);
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         .sports-container.reverse .sports-content {
             border-left: none;
             border-right: 4px solid var(--primary-color);
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         .sports-content h1 {
@@ -121,12 +130,14 @@
             margin-bottom: 10px;
             color: var(--primary-color);
             text-align: center;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         .sports-content p {
             font-size: 1rem;
             color: #ccc;
             margin-bottom: 20px;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         }
 
         /* Responsive design */
@@ -147,6 +158,7 @@
                 border-left: none;
                 border-right: none;
                 border-top: 4px solid var(--primary-color);
+                font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
             }
 
             .sports-slideshow {
@@ -179,6 +191,21 @@
 
         .sports-container {
             animation: fadeIn 0.5s ease-out;
+        }
+
+        .sports-container.reverse .sports-content p {
+            color: black;
+            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+        }
+
+        .sports-container .sports-content h1 {
+            color: #fff;
+            /* Heading color for sports-container */
+        }
+
+        .sports-container.reverse .sports-content h1 {
+            color: #000;
+            /* Heading color for sports-container reverse */
         }
     </style>
     <link rel="stylesheet" href="../public/css/navbar.css?v=<?php echo time(); ?>">
@@ -356,6 +383,35 @@
                         current form in the 15th century.</p>
                 </div>
             </div>
+
+            <div class="sports-container">
+                <div class="sports-image">
+                    <div class="sports-slideshow">
+                        <img src="https://i.pinimg.com/originals/00/99/88/009988ed036b1a5b7c064830c538eb1e.jpg"
+                            alt="Slide 1">
+                        <img src="https://www.aljazeera.com/wp-content/uploads/2022/10/000_32LY6Z7.jpg?resize=770%2C513&quality=80"
+                            alt="Slide 2">
+                        <img src="https://cdn.britannica.com/63/211663-050-A674D74C/Jonny-Bairstow-batting-semifinal-match-England-Australia-2019.jpg"
+                            alt="Slide 3">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/indias-jasprit-bumrah-celebrates-the-wicket-of-sri-lankas-pathum-nissanka-ap-135700795-1x1_1.jpg?VersionId=.mC58vrINDUNLkCUaQsnRuQOPr6ZyX6b"
+                            alt="Slide 4">
+                        <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2024-02/GettyImages-2034532575%281%29.jpg?h=01582e12&itok=LBme_vW_"
+                            alt="Slide 5">
+                    </div>
+                </div>
+                <div class="sports-content">
+                    <h1>BADMINTON</h1>
+                    <hr>
+                    <p>Tennis is a racket sport that can be played individually against a single opponent (singles) or
+                        between two teams of two players each (doubles). Each player uses a tennis racket that is strung
+                        with cord to strike a hollow rubber ball covered with felt over or around a net and into the
+                        opponent's court.</p>
+                    <p>The modern game of tennis originated in Birmingham, England, in the late 19th century as lawn
+                        tennis. It had close connections both to various field (lawn) games such as croquet and bowls as
+                        well as to the older racket sport today called real tennis.</p>
+                </div>
+            </div>
+
 
         </div>
     </div>
