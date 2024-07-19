@@ -17,7 +17,7 @@
 
     <main>
         <div class="Heading">
-            <h1 class="Event-Heading">KAALAVAIBHAVA</h1>
+            <h1 class="Event-Heading">KALAVAIBHAVA</h1>
         </div>
         <div class="Video-Container">
             <video class="mainVideo" src="../assets/video/av1.mkv" loop muted></video>
@@ -41,6 +41,48 @@
                     </g>
                 </svg>
             </button>
+        </div>
+        <div class="cul-container">
+            <section class="cul-slide" id="cul-slide1">
+                <h2 class="cul-heading">Advanced Cameras</h2>
+                <p class="cul-subheading">Selfie-takers. Movie-makers. Boundary-breakers.</p>
+                <div class="cul-content">
+                    <img src="path_to_camera_image.jpg" alt="Advanced Camera">
+                </div>
+            </section>
+            <section class="cul-slide" id="cul-slide2">
+                <h2 class="cul-heading">Apple-Designed Chips</h2>
+                <p class="cul-subheading">The kind of fast you can feel.</p>
+                <div class="cul-content">
+                    <img src="path_to_chip_image.jpg" alt="Apple Chip">
+                </div>
+            </section>
+            <section class="cul-slide" id="cul-slide3">
+                <h2 class="cul-heading">Battery Life</h2>
+                <p class="cul-subheading">The power of great battery life.</p>
+                <div class="cul-content">
+                    <img src="path_to_battery_image.jpg" alt="Battery Life">
+                </div>
+            </section>
+            <section class="cul-slide" id="cul-slide4">
+                <h2 class="cul-heading">Innovation</h2>
+                <p class="cul-subheading">Beautiful and durable, by design.</p>
+                <div class="cul-content">
+                    <video id="cul-video" src="path_to_video.mp4" loop muted></video>
+                    <button class="cul-play-pause-btn" id="cul-play-pause-btn">
+                        <svg class="cul-play-icon" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="cul-slide" id="cul-slide5">
+                <h2 class="cul-heading">Personalize Your iPhone</h2>
+                <p class="cul-subheading">Make it you. Through and through.</p>
+                <div class="cul-content">
+                    <img src="path_to_personalization_image.jpg" alt="Personalization">
+                </div>
+            </section>
         </div>
         <div class="spacer"></div>
     </main>
@@ -103,6 +145,49 @@
                     }
                 }
             );
+        });
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Horizontal scroll animation
+        gsap.to(".cul-container", {
+            x: () => -(document.querySelector(".cul-container").scrollWidth - window.innerWidth),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".cul-container",
+                pin: true,
+                scrub: 1,
+                end: () => "+=" + document.querySelector(".cul-container").scrollWidth
+            }
+        });
+
+        // Animate slides
+        gsap.utils.toArray(".cul-slide").forEach((slide, i) => {
+            gsap.from(slide, {
+                opacity: 0,
+                scale: 0.8,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: slide,
+                    start: "left center",
+                    end: "right center",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Video play/pause functionality
+        const video = document.getElementById('cul-video');
+        const playPauseBtn = document.getElementById('cul-play-pause-btn');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+            }
         });
     </script>
 
