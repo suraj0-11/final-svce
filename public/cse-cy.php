@@ -201,7 +201,7 @@
             font-size: 30px;
             color: #0088cc;
         }
-
+/* lol */
         .futuristic-contact-info-content {
             margin-left: 20px;
         }
