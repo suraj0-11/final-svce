@@ -10,6 +10,8 @@
     </style>
     <link rel="stylesheet" href="../public/css/navbar.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/whatsapp.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../public/css/youtube.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../public/css/instagram.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/animation.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/index.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/courses.css?v=<?php echo time(); ?>">
@@ -31,6 +33,18 @@
     <div class="whatsapp-button">
         <a href="https://wa.me/+919916775988" target="_blank">
             <img src="../assets/logos/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div class="youtube-button">
+        <a href="https://www.youtube.com/@svcebangalore2290" target="_blank">
+            <img src="../assets/logos/youtube.jpg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div class="instagram-button">
+        <a href="https://www.instagram.com/svce_bengaluru/" target="_blank">
+            <img src="../assets/logos/instagram.jpg" alt="Instagram">
         </a>
     </div>
 

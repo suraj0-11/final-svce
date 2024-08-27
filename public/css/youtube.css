@@ -1,0 +1,18 @@
+.youtube-button {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.youtube-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.youtube-button img:hover {
+    transform: scale(1.1);
+}
