@@ -7,9 +7,11 @@ html {
   background-color: black;
   overflow-x: hidden;
 }
+
 .spacer {
   height: 100vh;
 }
+
 .Heading {
   position: absolute;
   top: 20vh;
@@ -50,26 +52,27 @@ html {
 }
 
 .Video-Container {
-  margin-top: calc(20vh + 5rem); /* Adjust this value as needed */
+  margin-top: calc(20vh + 5rem);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden; /* Ensure content does not overflow */
+  overflow: hidden;
 }
 
 .mainVideo {
   width: 100vw;
   height: 60vh;
-  object-fit: cover; /* Ensure the video covers the container */
+  object-fit: cover;
   border-radius: 0;
   border: #fff solid 5px;
 }
 
 .play-pause-btn {
   position: absolute;
-  bottom: 20px; /* Adjust this value as needed */
-  right: 20px; /* Adjust this value as needed */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 50%;
@@ -105,20 +108,16 @@ html {
   display: inline;
 }
 
-.spacer {
-  height: 100vh;
-}
-
 .cul-container {
   margin-top: 25vh;
   display: flex;
-  width: 160vw; /* Increased to accommodate spacing */
+  width: 160vw;
   height: 100vh;
-  padding: 0 2vw; /* Added padding for outer spacing */
+  padding: 0 2vw;
 }
 
 .cul-slide {
-  width: 28vw; /* Slightly reduced to accommodate spacing */
+  width: 28vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -128,9 +127,9 @@ html {
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
-  margin: 0 1vw; /* Added margin for spacing between cards */
-  border-radius: 20px; /* Added border-radius */
-  background-color: #111; /* Dark background for contrast */
+  margin: 0 1vw;
+  border-radius: 20px;
+  background-color: #111;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -178,7 +177,8 @@ html {
 .cul-play-pause-btn {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 50%;
