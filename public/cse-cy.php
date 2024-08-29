@@ -367,37 +367,32 @@
         <h1 class="title">Computer Science & Engineering - Cybersecurity</h1>
 
         <nav class="side-nav">
-            <ul class="side-nav-list">
+        <ul class="side-nav-list">
+    <li class="side-nav-header"><strong>Other Programs</strong></li>
+    <hr> 
+    <li class="side-nav-item" id="basic-science"><a href="academics/cse.php">Basic <br>Science</a></li>
+    <hr>
+    <li class="side-nav-item" id="cse"><a href="academics/cse.php">Computer Science <br> & <br>Engineering</a></li>
+    <hr>
+    <li class="side-nav-item" id="cse-ai"><a href="academics/cse-ai.php">Computer Science & <br>Engineering - Artificial <br>Intelligence</a></li>
+    <hr>
+    <li class="side-nav-item" id="cse-ds"><a href="academics/cse-ds.php">Computer Science & <br>Engineering - Data <br>Science</a></li>
+    <hr>
+    <li class="side-nav-item" id="cse-cy"><a href="academics/cse-cy.php">Computer Science & <br>Engineering - Cyber <br>Security</a></li>
+    <hr>
+    <li class="side-nav-item" id="ise"><a href="academics/ise.php">Information Science <br>& <br>Engineering</a></li>
+    <hr>
+    <li class="side-nav-item" id="ece"><a href="academics/ece.php">Electronics & <br>Communication <br>Engineering</a></li>
+    <hr>
+    <li class="side-nav-item" id="me"><a href="academics/mech.php">Mechanical <br> Engineering</a></li>
+    <hr>
+    <li class="side-nav-item" id="civil"><a href="academics/civil.php">Civil <br>Engineering</a></li>
+    <hr>
+    <li class="side-nav-item" id="mba"><a href="academics/mba.php">Masters of <br>Business Administration</a></li>
+    <hr>
+    <li class="side-nav-item" id="mtech-st"><a href="academics/mtech-st.php">MTech - Structural <br>Engineering</a></li>
+</ul>
 
-                <!-- New Header for Other Programs -->
-                <li class="side-nav-header"><strong>Other Programs</strong></li>
-                <hr> 
-                <li class="side-nav-item"><a href="academics\cse.php">Basic <br>Science</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\cse.php">Computer Science <br> & <br>Engineering</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\cse-ai.php">Computer Science & <br>Engineering - Artificial <br>Intelligence</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\cse-ds.php">Computer Science & <br>Engineering - Data
-                      <br>  Science</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\cse-cy.php">Computer Science & <br>Engineering - Cyber
-                        <br>Security</a></li>
-                <hr>
-
-
-                <li class="side-nav-item"><a href="academics\ise.php">Information Science <br>& <br>Engineering</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\ece.php">Electronics & <br>Communication <br>Engineering</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\mech.php">Mechanical <br> Engineering</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\civil.php">Civil <br>Engineering</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\mba.php">Masters of <br>Business Administration</a></li>
-                <hr>
-                <li class="side-nav-item"><a href="academics\mtech-st.php">MTech - Structural <br>Engineering</a></li><br>
-            </ul>
         </nav>
 
         <div class="main-content">
