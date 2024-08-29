@@ -12,7 +12,7 @@
   <nav id="nav-navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">
-        <img src="../assets/svce-logo.png" alt="SVCE Logo" width="40" height="40" />
+        <img src="../assets/svce-logo.png" alt="SVCE Logo" width="60" height="60" />
         <span>SVCE Bengaluru</span>
       </a>
       <ul class="nav-menu">
@@ -145,7 +145,7 @@
       </button>
     </div>
   </nav>
-  <!-- <div class="spacer"></div> -->
+  <div class="spacer"></div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const navbar = document.getElementById("nav-navbar");

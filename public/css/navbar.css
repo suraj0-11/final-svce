@@ -1,6 +1,6 @@
 :root {
   --navbar-bg: rgba(18, 18, 18, 0);
-  --navbar-bg-scrolled: rgba(18, 18, 18, 1);
+  --navbar-bg-scrolled: rgba(19, 18, 18, 0.793);
   --navbar-text: #e0e0e0;
   --navbar-hover: #ffffff;
   --dropdown-bg: rgba(28, 28, 28, 0.95);
@@ -20,15 +20,13 @@ body {
 }
 
 #nav-navbar {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: var(--navbar-bg-scrolled);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  z-index: 1000;
+  height: 10vh;
+  z-index: 20;
   transition: background-color 0.3s ease;
 }
 
@@ -50,7 +48,7 @@ body {
 }
 
 .nav-logo img {
-  height: 32px;
+  height: 60px;
   width: auto;
   margin-right: 10px;
 }
@@ -68,21 +66,18 @@ body {
 #nav-toggle {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 #nav-toggle span {
-  display: block;
-  width: 20px;
-  height: 2px;
+  width: 100%;
+  height: 3px;
   background-color: var(--navbar-text);
-  margin: 2px 0;
   transition: 0.4s;
 }
 
@@ -90,11 +85,12 @@ body {
   #nav-navbar {
     height: 80px;
     background-color: var(--navbar-bg);
-    backdrop-filter: saturate(180%) blur(20px);
+    /* backdrop-filter: saturate(180%) blur(20px); */
   }
 
   #nav-navbar.scrolled {
     background-color: var(--navbar-bg-scrolled);
+    backdrop-filter: saturate(180%) blur(20px);
   }
 
   .nav-container {
@@ -102,7 +98,6 @@ body {
   }
 
   .nav-logo img {
-    height: 40px;
     margin-right: 15px;
   }
 
@@ -140,7 +135,6 @@ body {
     top: 80px;
     left: 0;
     width: 100%;
-    height: 60vh;
     background-color: var(--dropdown-bg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid var(--dropdown-border);
@@ -215,8 +209,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-menu.active {
-    display: flex;
+  .nav-menu {
+    display: none;
     flex-direction: column;
     position: fixed;
     top: 60px;
@@ -226,6 +220,10 @@ body {
     background-color: var(--navbar-bg-scrolled);
     padding: 20px 0;
     overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    display: flex;
   }
 
   .nav-item {
@@ -238,6 +236,8 @@ body {
     display: block;
     padding: 12px 20px;
     font-size: 18px;
+    color: var(--navbar-text);
+    text-decoration: none;
   }
 
   .nav-dropdown {
