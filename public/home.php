@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../public/css/whatsapp.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/youtube.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/instagram.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../public/css/linkedin.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/animation.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/index.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/courses.css?v=<?php echo time(); ?>">
@@ -47,6 +48,13 @@
             <img src="../assets/logos/instagram.jpg" alt="Instagram">
         </a>
     </div>
+
+    <div class="linkedin-button">
+        <a href="https://www.linkedin.com/school/sri-venkateshwara-college-of-engineering-bangalore/" target="_blank">
+            <img src="../assets/logos/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+
 
     <div class="navBar"><?php include __DIR__ . '/../includes/navbar.php'; ?></div>
     <div class="BannerContent">

@@ -1,11 +1,11 @@
-.whatsapp-button {
+.linkedin-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 140px;
     right: 20px;
     z-index: 1000;
 }
 
-.whatsapp-button img {
+.linkedin-button img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -13,6 +13,6 @@
     transition: transform 0.2s;
 }
 
-.whatsapp-button img:hover {
+.linkedin-button img:hover {
     transform: scale(1.1);
 }
