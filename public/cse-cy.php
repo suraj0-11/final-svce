@@ -394,6 +394,9 @@
 </ul>
 
         </nav>
+        <div class="right-image-container">
+    <img src="../public/images/image.png" alt="Description of the image">
+</div>
 
         <div class="main-content">
             <section id="overview">
