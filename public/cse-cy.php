@@ -406,7 +406,7 @@
 
         </nav>
         <div class="right-image-container">
-<<<<<<< HEAD
+
     <img src="../public/images/image.png" alt="Description of the image">
     <div class="button-container">
     <a href="#" class="button">Contact Us</a>
@@ -419,10 +419,8 @@
 
 
 
-=======
             <img src="" alt="Description of the image">
         </div>
->>>>>>> 78d8094b6f36883e0fc56047dd320c321946c247
 
         <div class="main-content">
             <section id="overview">
