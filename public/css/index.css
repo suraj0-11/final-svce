@@ -854,3 +854,53 @@ body {
     font-size: 16px;
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .moto {
+    font-size: 24px;
+    top: 30%;
+    left: 5%;
+    transform: translateY(-30%);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .moto {
+    font-size: 32px;
+    top: 35%;
+    left: 5%;
+    transform: translateY(-35%);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .moto {
+    font-size: 40px;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-40%);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .moto {
+    font-size: 48px;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .moto {
+    font-size: 55px;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
+  }
+}

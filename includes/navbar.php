@@ -21,19 +21,36 @@
           <div class="nav-dropdown">
             <div class="nav-dropdown-content">
               <div class="nav-dropdown-column">
-                <h3>Programs</h3>
+                <h3>Undergraduate</h3>
                 <ul>
-                  <li><a href="#">Undergraduate</a></li>
-                  <li><a href="#">Postgraduate</a></li>
-                  <li><a href="#">Doctoral</a></li>
+                  <li><a href="#">Computer Science Engineering</a></li>
+                  <li><a href="#">Computer Science & Artificial Intelligence </a></li>
+                  <li><a href="#">Computer Science & Data Science</a></li>
+                  <li><a href="#">Computer Science & Cyber Security</a></li>
+                  <li><a href="#">Information Science & Engineering</a></li>
+                  <li><a href="#">Electronics and Communication Engineering</a></li>
+                  <li><a href="#">Civil Engineering</a></li>
+                  <li><a href="#">Mechanical Engineering</a></li>
                 </ul>
               </div>
               <div class="nav-dropdown-column">
-                <h3>Admissions</h3>
+                <h3>Postgraduate</h3>
                 <ul>
-                  <li><a href="#">How to Apply</a></li>
-                  <li><a href="#">Scholarships</a></li>
-                  <li><a href="#">International Students</a></li>
+                  <li><a href="#">Masters in Business Administration</a></li>
+                  <li><a href="#">Masters in Computer Applications</a></li>
+                  <li><a href="#">M Tech - Structural Engineering</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-column">
+                <h3>Doctoral</h3>
+                <ul>
+                  <li><a href="#">Computer Science</a></li>
+                  <li><a href="#">Electronics and Communication</a></li>
+                  <li><a href="#">Civil</a></li>
+                  <li><a href="#">MAthematics</a></li>
+                  <li><a href="#">Physics</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Chemistry</a></li>
                 </ul>
               </div>
             </div>
