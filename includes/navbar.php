@@ -145,7 +145,6 @@
       </button>
     </div>
   </nav>
-  <div class="spacer"></div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const navbar = document.getElementById("nav-navbar");
