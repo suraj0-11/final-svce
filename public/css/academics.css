@@ -162,9 +162,11 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.side-nav-item a:hover {
-  opacity: 0.7;
+.side-nav-item:hover a{
+  color: white;
+  
 }
+
 
 /* Default style for side-nav-item */
 .side-nav-item::before {
@@ -183,6 +185,7 @@ body {
 /* Unique colors for each item */
 #cse::before {
   background-color: #562f73;
+
 }
 
 #cse-ai::before {
@@ -222,7 +225,9 @@ body {
 }
 
 #basic-science::before {
-  background-color: #9d4147;
+  background-color: #9d4147
+  
+  
 }
 
 
