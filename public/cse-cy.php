@@ -80,8 +80,8 @@
         }
 
         .image-labs img {
-            max-width: 100%;
-            height: 290px;
+            max-width: 60%;
+            height: 250px;
             flex: 1;
             margin: 0 10px;
             object-fit: contain;
@@ -362,6 +362,7 @@
             <li class="aca-navLists"><a href="#contact-us">Contact Us</a></li>
         </ul>
     </div>
+    
 
     <article class="article-wrapper">
         <h1 class="title">Computer Science & Engineering - Cybersecurity</h1>
@@ -394,7 +395,10 @@
 </ul>
 
         </nav>
-
+        
+  <div class="right-image-container">
+    <img src="../public/images/image.png" alt="Description of the image">
+  </div>
         <div class="main-content">
             <section id="overview">
                 <h2 class="subhead">Overview</h2>
