@@ -26,7 +26,7 @@
                   <li><a href="#">Computer Science Engineering</a></li>
                   <li><a href="#">Computer Science & Artificial Intelligence </a></li>
                   <li><a href="#">Computer Science & Data Science</a></li>
-                  <li><a href="#">Computer Science & Cyber Security</a></li>
+                  <li><a href="../public/cse-cy.php">Computer Science & Cyber Security</a></li>
                   <li><a href="#">Information Science & Engineering</a></li>
                   <li><a href="#">Electronics and Communication Engineering</a></li>
                   <li><a href="#">Civil Engineering</a></li>
@@ -65,14 +65,14 @@
                 <ul>
                   <li><a href="#">Housing</a></li>
                   <li><a href="#">Dining</a></li>
-                  <li><a href="#">Sports & Recreation</a></li>
+                  <li><a href="../public/sports.php">Sports & Recreation</a></li>
                 </ul>
               </div>
               <div class="dropdown-column">
                 <h3>Student Activities</h3>
                 <ul>
                   <li><a href="#">Clubs & Societies</a></li>
-                  <li><a href="#">Events</a></li>
+                  <li><a href="../public/cultural.php">Events</a></li>
                   <li><a href="#">Volunteering</a></li>
                 </ul>
               </div>

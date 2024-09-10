@@ -396,7 +396,17 @@
         </nav>
         <div class="right-image-container">
     <img src="../public/images/image.png" alt="Description of the image">
+    <div class="button-container">
+    <a href="#" class="button">Contact Us</a>
+    <a href="#" class="button">Download Brochure</a>
+    <a href="#" class="button">Book a 1-2-1 Chat</a>
+    <a href="#" class="button">FAQs</a>
+    <a href="#" class="button special">Applications Closed for 2024 Entry</a>
 </div>
+</div>
+
+
+
 
         <div class="main-content">
             <section id="overview">
