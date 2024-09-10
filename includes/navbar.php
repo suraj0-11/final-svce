@@ -110,19 +110,36 @@
           <div class="nav-dropdown">
             <div class="nav-dropdown-content">
               <div class="nav-dropdown-column">
-                <h3>Our Institution</h3>
+                <h3>Overview</h3>
                 <ul>
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Mission & Vision</a></li>
-                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Vision</a></li>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">SVCE Bengaluru</a></li>
+                  <li><a href="#">Core Values</a></li>
                 </ul>
               </div>
               <div class="nav-dropdown-column">
-                <h3>Campus</h3>
+                <h3>WHY SVCE?</h3>
                 <ul>
                   <li><a href="#">Facilities</a></li>
                   <li><a href="#">Location</a></li>
                   <li><a href="#">Virtual Tour</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-column">
+                <h3>Accreditation</h3>
+                <ul>
+                  <li><a href="#">Facilities</a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Virtual Tour</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-column">
+                <h3>Leadership</h3>
+                <ul>
+                  <li><a href="#">Chairman</a></li>
+                  <li><a href="#">Managing Director</a></li>
+                  <li><a href="#">Executive Director</a></li>
                 </ul>
               </div>
             </div>
