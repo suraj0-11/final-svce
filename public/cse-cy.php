@@ -80,8 +80,8 @@
         }
 
         .image-labs img {
-            max-width: 100%;
-            height: 290px;
+            max-width: 60%;
+            height: 250px;
             flex: 1;
             margin: 0 10px;
             object-fit: contain;
