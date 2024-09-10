@@ -1,11 +1,12 @@
 :root {
-  --navbar-bg: rgba(18, 18, 18, 0);
-  --navbar-bg-scrolled: rgba(19, 18, 18, 0.793);
+  --navbar-bg: rgba(0, 0, 0, 0);
+  --navbar-bg-scrolled: rgba(0, 0, 0, 0.8);
   --navbar-text: #e0e0e0;
   --navbar-hover: #ffffff;
-  --dropdown-bg: rgba(28, 28, 28, 0.95);
+  --dropdown-bg: rgba(0, 0, 0, 0.9);
   --dropdown-border: rgba(255, 255, 255, 0.1);
-  --accent-color: #4a90e2;
+  --accent-color: #0088cc;
+  --hover-color: #0088cc;
 }
 
 * {
@@ -15,19 +16,24 @@
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #121212;
   color: var(--navbar-text);
 }
 
 #nav-navbar {
-  background-color: var(--navbar-bg-scrolled);
+  background-color: var(--navbar-bg);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 10vh;
-  z-index: 20;
+  z-index: 1000;
   transition: background-color 0.3s ease;
+}
+
+#nav-navbar:hover {
+  background-color: var(--navbar-bg-scrolled);
 }
 
 .nav-container {
@@ -36,8 +42,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
+  height: 80px;
 }
 
 .nav-logo {
@@ -49,177 +55,128 @@ body {
 
 .nav-logo img {
   height: 60px;
-  width: auto;
+  width: 60px;
   margin-right: 10px;
 }
 
 .nav-logo span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  position: static;
+}
+
+.nav-link {
+  color: var(--navbar-text);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  color: var(--navbar-hover);
+  background-color: var(--accent-color);
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.nav-dropdown {
   display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--dropdown-bg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.dropdown-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-column {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.dropdown-column:last-child {
+  margin-right: 0;
+}
+
+.dropdown-column h3 {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.dropdown-column ul {
+  list-style-type: none;
+}
+
+.dropdown-column ul li {
+  margin-bottom: 10px;
+}
+
+.dropdown-column ul li a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.dropdown-column ul li a:hover {
+  color: var(--navbar-hover);
+  background-color: var(--accent-color);
 }
 
 #nav-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#nav-toggle span {
-  width: 100%;
-  height: 3px;
-  background-color: var(--navbar-text);
-  transition: 0.4s;
+  display: none;
 }
 
 @media (min-width: 769px) {
-  #nav-navbar {
-    height: 80px;
-    background-color: var(--navbar-bg);
-    /* backdrop-filter: saturate(180%) blur(20px); */
-  }
-
-  #nav-navbar.scrolled {
-    background-color: var(--navbar-bg-scrolled);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-
-  .nav-container {
-    padding: 0 20px;
-  }
-
-  .nav-logo img {
-    margin-right: 15px;
-  }
-
-  .nav-logo span {
-    font-size: 22px;
-  }
-
-  .nav-menu {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .nav-item {
-    position: relative;
-    margin: 0 10px;
-  }
-
-  .nav-link {
-    color: var(--navbar-text);
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    border-radius: 25px;
-  }
-
-  .nav-link:hover {
-    color: var(--navbar-hover);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-dropdown {
-    display: none;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: var(--dropdown-bg);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid var(--dropdown-border);
-    overflow-y: auto;
-  }
-
   .nav-item:hover .nav-dropdown {
     display: block;
-  }
-
-  .nav-dropdown-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .nav-dropdown-column {
-    flex: 1;
-    margin-right: 40px;
-  }
-
-  .nav-dropdown-column:last-child {
-    margin-right: 0;
-  }
-
-  .nav-dropdown-column h3 {
-    color: var(--accent-color);
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    position: relative;
-  }
-
-  .nav-dropdown-column h3::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background-color: var(--accent-color);
-  }
-
-  .nav-dropdown-column ul {
-    list-style-type: none;
-  }
-
-  .nav-dropdown-column ul li {
-    margin-bottom: 15px;
-  }
-
-  .nav-dropdown-column ul li a {
-    color: var(--navbar-text);
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    display: inline-block;
-    padding: 5px 0;
-  }
-
-  .nav-dropdown-column ul li a:hover {
-    color: var(--navbar-hover);
-    transform: translateX(5px);
-  }
-
-  #nav-toggle {
-    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    height: 60px;
+  }
+
   .nav-menu {
     display: none;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 0;
     right: 0;
-    bottom: 0;
     background-color: var(--navbar-bg-scrolled);
     padding: 20px 0;
-    overflow-y: auto;
+    max-height: 100vh;
+    overflow-y: auto; /* Enable scrolling in mobile view */
   }
 
   .nav-menu.active {
@@ -228,50 +185,46 @@ body {
 
   .nav-item {
     width: 100%;
-    text-align: center;
-    margin: 10px 0;
   }
 
   .nav-link {
-    display: block;
-    padding: 12px 20px;
-    font-size: 18px;
-    color: var(--navbar-text);
-    text-decoration: none;
+    padding: 15px 20px;
   }
 
   .nav-dropdown {
+    position: static;
+    height: auto;
     display: none;
-    background-color: rgba(255, 255, 255, 0.05);
-    margin-top: 10px;
   }
 
-  .nav-item.active .nav-dropdown {
+  .nav-dropdown.active {
     display: block;
   }
 
-  .nav-dropdown-content {
-    padding: 20px 15px;
+  .dropdown-content {
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .nav-dropdown-column {
+  .dropdown-column {
+    margin-right: 0;
     margin-bottom: 20px;
   }
 
-  .nav-dropdown-column h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: var(--accent-color);
+  #nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
-  .nav-dropdown-column ul li {
-    margin-bottom: 12px;
-  }
-
-  .nav-dropdown-column ul li a {
-    font-size: 14px;
-    color: var(--navbar-text);
-    text-decoration: none;
+  #nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--navbar-text);
+    margin: 5px 0;
+    transition: 0.4s;
   }
 
   #nav-toggle.active span:nth-child(1) {
@@ -285,4 +238,26 @@ body {
   #nav-toggle.active span:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+}
+
+/* Initial state of the navbar */
+#nav-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* When the navbar is scrolled */
+#nav-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+}
+
+/* Ensure the nav menu is scrollable in mobile view */
+.nav-menu.active {
+  max-height: 100vh; /* Set max height to the viewport height */
+  overflow-y: auto; /* Enable scrolling within the mobile nav menu */
+}
+
+/* Prevent body scrolling when the nav menu is open */
+body.nav-open {
+  overflow: hidden;
 }
