@@ -12,15 +12,15 @@
   <nav id="nav-navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">
-        <img src="../assets/svce-logo.png" alt="SVCE Logo" width="60" height="60" />
+        <img src="../assets/svce-logo.png" alt="SVCE Logo" />
         <span>SVCE Bengaluru</span>
       </a>
       <ul class="nav-menu">
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">Study</a>
           <div class="nav-dropdown">
-            <div class="nav-dropdown-content">
-              <div class="nav-dropdown-column">
+            <div class="dropdown-content">
+              <div class="dropdown-column">
                 <h3>Undergraduate</h3>
                 <ul>
                   <li><a href="#">Computer Science Engineering</a></li>
@@ -33,7 +33,7 @@
                   <li><a href="#">Mechanical Engineering</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Postgraduate</h3>
                 <ul>
                   <li><a href="#">Masters in Business Administration</a></li>
@@ -41,13 +41,13 @@
                   <li><a href="#">M Tech - Structural Engineering</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Doctoral</h3>
                 <ul>
                   <li><a href="#">Computer Science</a></li>
                   <li><a href="#">Electronics and Communication</a></li>
                   <li><a href="#">Civil</a></li>
-                  <li><a href="#">MAthematics</a></li>
+                  <li><a href="#">Mathematics</a></li>
                   <li><a href="#">Physics</a></li>
                   <li><a href="#">Management</a></li>
                   <li><a href="#">Chemistry</a></li>
@@ -59,8 +59,8 @@
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">Life @ SVCE</a>
           <div class="nav-dropdown">
-            <div class="nav-dropdown-content">
-              <div class="nav-dropdown-column">
+            <div class="dropdown-content">
+              <div class="dropdown-column">
                 <h3>Campus Life</h3>
                 <ul>
                   <li><a href="#">Housing</a></li>
@@ -68,7 +68,7 @@
                   <li><a href="#">Sports & Recreation</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Student Activities</h3>
                 <ul>
                   <li><a href="#">Clubs & Societies</a></li>
@@ -85,8 +85,8 @@
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">Academics</a>
           <div class="nav-dropdown">
-            <div class="nav-dropdown-content">
-              <div class="nav-dropdown-column">
+            <div class="dropdown-content">
+              <div class="dropdown-column">
                 <h3>Departments</h3>
                 <ul>
                   <li><a href="#">Engineering</a></li>
@@ -94,7 +94,7 @@
                   <li><a href="#">Management</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Resources</h3>
                 <ul>
                   <li><a href="#">Academic Calendar</a></li>
@@ -108,8 +108,8 @@
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">About Us</a>
           <div class="nav-dropdown">
-            <div class="nav-dropdown-content">
-              <div class="nav-dropdown-column">
+            <div class="dropdown-content">
+              <div class="dropdown-column">
                 <h3>Overview</h3>
                 <ul>
                   <li><a href="#">Vision</a></li>
@@ -118,7 +118,7 @@
                   <li><a href="#">Core Values</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>WHY SVCE?</h3>
                 <ul>
                   <li><a href="#">Facilities</a></li>
@@ -126,7 +126,7 @@
                   <li><a href="#">Virtual Tour</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Accreditation</h3>
                 <ul>
                   <li><a href="#">Facilities</a></li>
@@ -134,7 +134,7 @@
                   <li><a href="#">Virtual Tour</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Leadership</h3>
                 <ul>
                   <li><a href="#">Chairman</a></li>
@@ -148,8 +148,8 @@
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">News & Events</a>
           <div class="nav-dropdown">
-            <div class="nav-dropdown-content">
-              <div class="nav-dropdown-column">
+            <div class="dropdown-content">
+              <div class="dropdown-column">
                 <h3>News</h3>
                 <ul>
                   <li><a href="#">Latest News</a></li>
@@ -157,7 +157,7 @@
                   <li><a href="#">Newsletters</a></li>
                 </ul>
               </div>
-              <div class="nav-dropdown-column">
+              <div class="dropdown-column">
                 <h3>Events</h3>
                 <ul>
                   <li><a href="#">Upcoming Events</a></li>
@@ -179,16 +179,15 @@
       </button>
     </div>
   </nav>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const navbar = document.getElementById("nav-navbar");
       const navToggle = document.getElementById("nav-toggle");
       const navMenu = document.querySelector(".nav-menu");
-      const dropdownItems = document.querySelectorAll(
-        ".nav-item.has-dropdown"
-      );
+      const dropdownItems = document.querySelectorAll(".nav-item.has-dropdown");
 
-      // Function to handle navbar background on scroll
+      // Handle navbar background on scroll
       function handleScroll() {
         if (window.scrollY > 50) {
           navbar.classList.add("scrolled");
@@ -197,7 +196,6 @@
         }
       }
 
-      // Add scroll event listener
       window.addEventListener("scroll", handleScroll);
 
       navToggle.addEventListener("click", () => {
@@ -205,37 +203,36 @@
         navMenu.classList.toggle("active");
       });
 
-      // Close mobile menu when a link is clicked
       document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          navToggle.classList.remove("active");
-          navMenu.classList.remove("active");
+        link.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            const parentDropdown = link.parentNode.querySelector('.nav-dropdown');
+            if (parentDropdown) {
+              e.preventDefault();
+              parentDropdown.style.display =
+                parentDropdown.style.display === 'block' ? 'none' : 'block';
+            }
+          }
         });
       });
 
-      // Handle dropdowns
       dropdownItems.forEach((item) => {
-        const link = item.querySelector(".nav-link");
         const dropdown = item.querySelector(".nav-dropdown");
         let timeoutId;
 
         item.addEventListener("mouseenter", () => {
-          clearTimeout(timeoutId);
-          closeAllDropdowns();
-          dropdown.style.display = "block";
+          if (window.innerWidth > 768) {
+            clearTimeout(timeoutId);
+            closeAllDropdowns();
+            dropdown.style.display = "block";
+          }
         });
 
         item.addEventListener("mouseleave", () => {
-          timeoutId = setTimeout(() => {
-            dropdown.style.display = "none";
-          }, 300);
-        });
-
-        link.addEventListener("click", (e) => {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdown.style.display =
-              dropdown.style.display === "block" ? "none" : "block";
+          if (window.innerWidth > 768) {
+            timeoutId = setTimeout(() => {
+              dropdown.style.display = "none";
+            }, 300);
           }
         });
       });
@@ -246,12 +243,27 @@
         });
       }
 
-      // Close dropdowns when clicking outside
       document.addEventListener("click", (e) => {
         if (!e.target.closest(".nav-item.has-dropdown")) {
           closeAllDropdowns();
         }
       });
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbar = document.getElementById("nav-navbar");
+
+        // Function to handle navbar background on scroll
+        function handleScroll() {
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        }
+
+        // Add scroll event listener
+        window.addEventListener("scroll", handleScroll);
+      });
+
     });
   </script>
 </body>
