@@ -27,7 +27,7 @@ body {
 
 .aca-navbar {
   position: sticky;
-  top: 10%;
+  top: 10dvh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -163,12 +163,12 @@ body {
 }
 
 .side-nav-item:hover a {
-  color:white;
+  color: white;
 }
 
 /* Default style for side-nav-item */
 .side-nav-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -224,7 +224,6 @@ body {
 #basic-science::before {
   background-color: #9d4147;
 }
-
 
 .side-nav-item:hover::before {
   transform: scaleX(1);
@@ -357,7 +356,9 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .side-nav, .main-content, .right-image-container {
+  .side-nav,
+  .main-content,
+  .right-image-container {
     grid-column: 1 / -1;
     grid-row: auto;
   }
@@ -412,7 +413,9 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .side-nav, .main-content, .right-image-container {
+  .side-nav,
+  .main-content,
+  .right-image-container {
     grid-column: 1 / -1;
     grid-row: auto;
   }
