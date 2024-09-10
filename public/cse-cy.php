@@ -80,8 +80,8 @@
         }
 
         .image-labs img {
-            max-width: 60%;
-            height: 250px;
+            max-width: 100%;
+            height: 290px;
             flex: 1;
             margin: 0 10px;
             object-fit: contain;
@@ -332,7 +332,7 @@
 }
 
 .side-nav-item:hover {
-    color: white; /* Optional: Change text color on hover */
+    text: white; /* Optional: Change text color on hover */
 }
 
 .side-nav-item span {
@@ -348,7 +348,7 @@
 <body>
     <div class="navBar"><?php include __DIR__ . '/../includes/navbar.php'; ?></div>
     <div class="aca-img">
-        <img class="aca-bgimg" src="../assets/bgimages/116.jpg" alt="cse-cy">
+        <img class="aca-bgimg" src="../assets/bgimages/4.jpg" alt="cse-cy">
     </div>
     <div class="aca-navbar">
         <ul id="aca-navLinks">
@@ -362,7 +362,6 @@
             <li class="aca-navLists"><a href="#contact-us">Contact Us</a></li>
         </ul>
     </div>
-    
 
     <article class="article-wrapper">
         <h1 class="title">Computer Science & Engineering - Cybersecurity</h1>
@@ -395,10 +394,7 @@
 </ul>
 
         </nav>
-        
-  <div class="right-image-container">
-    <img src="../public/images/image.png" alt="Description of the image">
-  </div>
+
         <div class="main-content">
             <section id="overview">
                 <h2 class="subhead">Overview</h2>

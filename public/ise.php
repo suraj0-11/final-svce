@@ -313,7 +313,7 @@
 <body>
     <div class="navBar"><?php include __DIR__ . '/../includes/navbar.php'; ?></div>
     <div class="aca-img">
-        <img class="aca-bgimg" src="../assets/bgimages/116.jpg" alt="cse-cy">
+        <img class="aca-bgimg" src="../assets/bgimages/6.jpg" alt="cse-cy">
     </div>
     <div class="aca-navbar">
         <ul id="aca-navLinks">
