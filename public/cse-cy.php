@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
 
-
     <link rel="stylesheet" href="../public/css/navbar.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/academics.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/footer.css?v=<?php echo time(); ?>">
@@ -73,7 +72,7 @@
         </nav>
         <div class="right-image-container">
 
-    <img src="../public/images/image.png" alt="">
+    <img src="../public/images/image.png" alt="Description of the image">
     <div class="button-container">
     <a href="#" class="button">Contact Us</a>
     <a href="#" class="button">Download Brochure</a>
@@ -82,6 +81,10 @@
     <a href="#" class="button special">Applications Closed for 2024 Entry</a>
 </div>
 </div>
+
+
+
+            <img src="" alt="Description of the image">
         </div>
 
         <div class="main-content">
