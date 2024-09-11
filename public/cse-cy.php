@@ -19,7 +19,10 @@
         <img class="aca-bgimg" src="../assets/bgimages/4.jpg" alt="cse-cy">
     </div>
     <div class="aca-navbar">
-        <ul id="aca-navLinks">
+        <div class="aca-navbar-toggle">
+            <button id="nav-toggle">Menu</button>
+        </div>
+        <ul id="aca-navLinks" class="hidden">
             <li class="aca-navLists"><a href="#overview">Overview</a></li>
             <li class="aca-navLists"><a href="#programme-structure">Programme Structure</a></li>
             <li class="aca-navLists"><a href="#research-facilities">Research Facilities</a></li>
@@ -30,6 +33,7 @@
             <li class="aca-navLists"><a href="#contact-us">Contact Us</a></li>
         </ul>
     </div>
+
 
     <article class="article-wrapper">
         <h1 class="title">Computer Science & Engineering - Cyber Security</h1>
@@ -72,19 +76,19 @@
         </nav>
         <div class="right-image-container">
 
-    <img src="../public/images/image.png" alt="Description of the image">
-    <div class="button-container">
-    <a href="#" class="button">Contact Us</a>
-    <a href="#" class="button">Download Brochure</a>
-    <a href="#" class="button">Book a 1-2-1 Chat</a>
-    <a href="#" class="button">FAQs</a>
-    <a href="#" class="button special">Applications Closed for 2024 Entry</a>
-</div>
-</div>
+            <img src="../public/images/image.png" alt="Description of the image">
+            <div class="button-container">
+                <a href="#" class="button">Contact Us</a>
+                <a href="#" class="button">Download Brochure</a>
+                <a href="#" class="button">Book a 1-2-1 Chat</a>
+                <a href="#" class="button">FAQs</a>
+                <a href="#" class="button special">Applications Closed for 2024 Entry</a>
+            </div>
+        </div>
 
 
 
-            <img src="" alt="Description of the image">
+        <img src="" alt="Description of the image">
         </div>
 
         <div class="main-content">
@@ -300,6 +304,7 @@
 
     <div class="Footer"><?php include __DIR__ . '/../includes/footer.php'; ?></div>
     <script>
+
         document.addEventListener('DOMContentLoaded', function () {
             const navLinks = document.querySelectorAll('#aca-navLinks a, .side-nav-list a, .mini-navbar a');
 
@@ -357,6 +362,52 @@
             // Activate the first tab by default
             navLinks[0].click();
         });
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('aca-navLinks');
+            const navItems = navLinks.querySelectorAll('.aca-navLists');
+            const sections = document.querySelectorAll('section[id]');
+
+            // Toggle menu visibility
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+
+            // Highlight the current section
+            function setActiveSection() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navItems.forEach((item) => item.classList.remove('active'));
+                navItems[index].classList.add('active');
+            }
+
+            setActiveSection();
+            window.addEventListener('scroll', setActiveSection);
+
+            // Scroll to the section and close the dropdown on item click
+            navItems.forEach((item) => {
+                item.addEventListener('click', function () {
+                    const targetId = this.querySelector('a').getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const windowHeight = window.innerHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = targetPosition - (windowHeight * 0.20);
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        navLinks.classList.remove('show');
+                    }
+                });
+            });
+        });
+
     </script>
 </body>
 

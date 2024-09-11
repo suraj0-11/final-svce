@@ -8,303 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-        body {
-            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-            text-align: justify;
-        }
-
-        .article-paragraph {
-            text-align: justify;
-        }
-
-        .mini-navbar {
-            background-color: #333333;
-            display: flex;
-            justify-content: flex-start;
-            padding: 0;
-            margin: 0;
-            border-bottom: 1px solid #444444;
-        }
-
-        .nav-link {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .nav-link:hover {
-            background-color: #444444;
-        }
-
-        .nav-link.active {
-            background-color: #0099cc;
-            color: white;
-        }
-
-        .content {
-            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-        }
-
-        .content h3 {
-            font-size: 18px;
-            margin-top: 20px;
-        }
-
-        .content table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .content td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        .research-cse-cy {
-            padding-right: 40px;
-        }
-
-        .image-cy {
-            justify-content: center;
-        }
-
-        .image-labs {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .image-labs img {
-            max-width: 100%;
-            height: 290px;
-            flex: 1;
-            margin: 0 10px;
-            object-fit: contain;
-        }
-
-        .cse-cy-stats-container {
-            background-color: white;
-            color: white;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 0 2rem 0 2rem;
-        }
-
-        .cse-cy-stat-item {
-            text-align: center;
-            flex: 1 1 200px;
-            margin: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .cse-cy-stat-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .cse-cy-stat-number {
-            font-size: 35px;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #0088cc;
-            transition: color 0.3s ease;
-        }
-
-        .cse-cy-stat-item:hover .college-stat-number {
-            color: #0088cc;
-        }
-
-        .cse-cy-stat-description {
-            font-size: clamp(0.8rem, 1.5vw, 1rem);
-            color: black;
-        }
-
-        #career-opportunities b {
-            font-size: 20px;
-
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-        .futuristic-contact-section * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .futuristic-contact-section {
-            min-height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .futuristic-contact-section::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: black;
-        }
-
-        .futuristic-container {
-            max-width: 1080px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .futuristic-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 3;
-            position: relative;
-        }
-
-        .futuristic-contact-info {
-            width: 45%;
-        }
-
-        .futuristic-contact-info-item {
-            display: flex;
-            margin-bottom: 30px;
-        }
-
-        .futuristic-contact-info-icon {
-            height: 70px;
-            width: 70px;
-            background-color: #fff;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .futuristic-contact-info-icon i {
-            font-size: 30px;
-            color: #0088cc;
-        }
-
-        .futuristic-contact-info-content {
-            margin-left: 20px;
-        }
-
-        .futuristic-contact-info-content h4 {
-            color: #0088cc;
-            font-size: 1.4em;
-            margin-bottom: 5px;
-        }
-
-        .futuristic-contact-info-content p {
-            color: black;
-            font-size: 1em;
-        }
-
-        .futuristic-contact-form {
-            background-color: #fff;
-            padding: 40px;
-            width: 50%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .futuristic-contact-form h2 {
-            font-weight: bold;
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .futuristic-input-box {
-            position: relative;
-            width: 100%;
-            margin-top: 10px;
-            color: #0088cc;
-        }
-
-        .futuristic-input-box input,
-        .futuristic-input-box textarea {
-            width: 100%;
-            padding: 5px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            border: none;
-            border-bottom: 2px solid #333;
-            outline: none;
-            resize: none;
-            background: none;
-            color: #0088cc;
-        }
-
-        .futuristic-input-box span {
-            position: absolute;
-            left: 0;
-            padding: 5px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            pointer-events: none;
-            transition: 0.5s;
-            color: #666;
-        }
-
-        .futuristic-input-box input:focus~span,
-        .futuristic-input-box textarea:focus~span,
-        .futuristic-input-box input:valid~span,
-        .futuristic-input-box textarea:valid~span {
-            color: #0088cc;
-            font-size: 12px;
-            transform: translateY(-20px);
-        }
-
-        .futuristic-input-box input[type="submit"] {
-            width: 100%;
-            background: #00bcd4;
-            color: #FFF;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            font-size: 18px;
-            border: 1px solid #00bcd4;
-            transition: 0.5s;
-        }
-
-        .futuristic-input-box input[type="submit"]:hover {
-            background: #FFF;
-            color: #00bcd4;
-        }
-
-        @media (max-width: 991px) {
-            .futuristic-row {
-                flex-direction: column;
-            }
-
-            .futuristic-contact-info {
-                margin-bottom: 40px;
-                width: 100%;
-            }
-
-            .futuristic-contact-form {
-                width: 100%;
-            }
-        }
-    </style>
     <link rel="stylesheet" href="../public/css/navbar.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/academics.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../public/css/footer.css?v=<?php echo time(); ?>">
@@ -313,10 +16,13 @@
 <body>
     <div class="navBar"><?php include __DIR__ . '/../includes/navbar.php'; ?></div>
     <div class="aca-img">
-        <img class="aca-bgimg" src="../assets/bgimages/1.jpg" alt="cse-cy">
+        <img class="aca-bgimg" src="../assets/bgimages/4.jpg" alt="cse-cy">
     </div>
     <div class="aca-navbar">
-        <ul id="aca-navLinks">
+        <div class="aca-navbar-toggle">
+            <button id="nav-toggle">Menu</button>
+        </div>
+        <ul id="aca-navLinks" class="hidden">
             <li class="aca-navLists"><a href="#overview">Overview</a></li>
             <li class="aca-navLists"><a href="#programme-structure">Programme Structure</a></li>
             <li class="aca-navLists"><a href="#research-facilities">Research Facilities</a></li>
@@ -328,43 +34,62 @@
         </ul>
     </div>
 
+
     <article class="article-wrapper">
-        <h1 class="title">Computer Science & Engineering - Cybersecurity</h1>
+        <h1 class="title">Computer Science & Engineering - Cyber Security</h1>
 
         <nav class="side-nav">
             <ul class="side-nav-list">
-
-                <!-- New Header for Other Programs -->
                 <li class="side-nav-header"><strong>Other Programs</strong></li>
-                <hr> <br>
-                <li class="side-nav-item"><a href="academics\cse.php">Basic Science</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\cse.php">Computer Science & Engineering</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\cse-ai.php">Computer Science & Engineering - Artificial
-                        Intelligence</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\cse-ds.php">Computer Science & Engineering - Data
-                        Science</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\cse-cy.php">Computer Science & Engineering - Cyber
-                        Security</a></li>
-                <hr><br>
-
-
-                <li class="side-nav-item"><a href="academics\ise.php">Information Science & Engineering</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\ece.php">Electronics & Communication Engineering</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\mech.php">Mechanical Engineering</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\civil.php">Civil Engineering</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\mba.php">Masters of Business Administration</a></li>
-                <hr><br>
-                <li class="side-nav-item"><a href="academics\mtech-st.php">MTech - Structural Engineering</a></li><br>
+                <hr>
+                <li class="side-nav-item" id="basic-science"><a href="academics/cse.php">Basic <br>Science</a></li>
+                <hr>
+                <li class="side-nav-item" id="cse"><a href="academics/cse.php">Computer Science <br> &
+                        <br>Engineering</a></li>
+                <hr>
+                <li class="side-nav-item" id="cse-ai"><a href="academics/cse-ai.php">Computer Science & <br>Engineering
+                        - Artificial <br>Intelligence</a></li>
+                <hr>
+                <li class="side-nav-item" id="cse-ds"><a href="academics/cse-ds.php">Computer Science & <br>Engineering
+                        - Data <br>Science</a></li>
+                <hr>
+                <li class="side-nav-item" id="cse-cy"><a href="academics/cse-cy.php">Computer Science & <br>Engineering
+                        - Cyber <br>Security</a></li>
+                <hr>
+                <li class="side-nav-item" id="ise"><a href="academics/ise.php">Information Science <br>&
+                        <br>Engineering</a></li>
+                <hr>
+                <li class="side-nav-item" id="ece"><a href="academics/ece.php">Electronics & <br>Communication
+                        <br>Engineering</a></li>
+                <hr>
+                <li class="side-nav-item" id="me"><a href="academics/mech.php">Mechanical <br> Engineering</a></li>
+                <hr>
+                <li class="side-nav-item" id="civil"><a href="academics/civil.php">Civil <br>Engineering</a></li>
+                <hr>
+                <li class="side-nav-item" id="mba"><a href="academics/mba.php">Masters of <br>Business
+                        Administration</a></li>
+                <hr>
+                <li class="side-nav-item" id="mtech-st"><a href="academics/mtech-st.php">MTech - Structural
+                        <br>Engineering</a></li>
             </ul>
+
         </nav>
+        <div class="right-image-container">
+
+            <img src="../public/images/image.png" alt="Description of the image">
+            <div class="button-container">
+                <a href="#" class="button">Contact Us</a>
+                <a href="#" class="button">Download Brochure</a>
+                <a href="#" class="button">Book a 1-2-1 Chat</a>
+                <a href="#" class="button">FAQs</a>
+                <a href="#" class="button special">Applications Closed for 2024 Entry</a>
+            </div>
+        </div>
+
+
+
+        <img src="" alt="Description of the image">
+        </div>
 
         <div class="main-content">
             <section id="overview">
@@ -579,6 +304,7 @@
 
     <div class="Footer"><?php include __DIR__ . '/../includes/footer.php'; ?></div>
     <script>
+
         document.addEventListener('DOMContentLoaded', function () {
             const navLinks = document.querySelectorAll('#aca-navLinks a, .side-nav-list a, .mini-navbar a');
 
@@ -636,6 +362,52 @@
             // Activate the first tab by default
             navLinks[0].click();
         });
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('aca-navLinks');
+            const navItems = navLinks.querySelectorAll('.aca-navLists');
+            const sections = document.querySelectorAll('section[id]');
+
+            // Toggle menu visibility
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+
+            // Highlight the current section
+            function setActiveSection() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navItems.forEach((item) => item.classList.remove('active'));
+                navItems[index].classList.add('active');
+            }
+
+            setActiveSection();
+            window.addEventListener('scroll', setActiveSection);
+
+            // Scroll to the section and close the dropdown on item click
+            navItems.forEach((item) => {
+                item.addEventListener('click', function () {
+                    const targetId = this.querySelector('a').getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const windowHeight = window.innerHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = targetPosition - (windowHeight * 0.20);
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        navLinks.classList.remove('show');
+                    }
+                });
+            });
+        });
+
     </script>
 </body>
 
