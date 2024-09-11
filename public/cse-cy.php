@@ -32,7 +32,7 @@
     </div>
 
     <article class="article-wrapper">
-        <h1 class="title">Computer Science & Engineering - Cybersecurity</h1>
+        <h1 class="title">Computer Science & Engineering - Cyber Security</h1>
 
         <nav class="side-nav">
             <ul class="side-nav-list">

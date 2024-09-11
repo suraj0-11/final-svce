@@ -23,10 +23,10 @@
               <div class="dropdown-column">
                 <h3>Undergraduate</h3>
                 <ul>
-                  <li><a href="index.php?page=cse">Computer Science Engineering</a></li>
-                  <li><a href="index.php?page=cse-ai">Computer Science & Artificial Intelligence </a></li>
-                  <li><a href="index.php?page=cse-ds">Computer Science & Data Science</a></li>
-                  <li><a href="index.php?page=cse-cy">Computer Science & Cyber Security</a></li>
+                  <li><a href="index.php?page=cse">Computer Science & Engineering</a></li>
+                  <li><a href="index.php?page=cse-ai">Computer Science - Artificial Intelligence </a></li>
+                  <li><a href="index.php?page=cse-ds">Computer Science - Data Science</a></li>
+                  <li><a href="index.php?page=cse-cy">Computer Science - Cyber Security</a></li>
                   <li><a href="index.php?page=ise">Information Science & Engineering</a></li>
                   <li><a href="index.php?page=ece">Electronics and Communication Engineering</a></li>
                   <li><a href="index.php?page=civil">Civil Engineering</a></li>
