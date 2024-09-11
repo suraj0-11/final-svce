@@ -11,7 +11,7 @@
 <body>
   <nav id="nav-navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">
+      <a href="index.php?page=home" class="nav-logo">
         <img src="../assets/svce-logo.png" alt="SVCE Logo" />
         <span>SVCE Bengaluru</span>
       </a>
@@ -23,22 +23,22 @@
               <div class="dropdown-column">
                 <h3>Undergraduate</h3>
                 <ul>
-                  <li><a href="#">Computer Science Engineering</a></li>
-                  <li><a href="#">Computer Science & Artificial Intelligence </a></li>
-                  <li><a href="#">Computer Science & Data Science</a></li>
-                  <li><a href="../public/cse-cy.php">Computer Science & Cyber Security</a></li>
-                  <li><a href="#">Information Science & Engineering</a></li>
-                  <li><a href="#">Electronics and Communication Engineering</a></li>
-                  <li><a href="#">Civil Engineering</a></li>
-                  <li><a href="#">Mechanical Engineering</a></li>
+                  <li><a href="index.php?page=cse">Computer Science Engineering</a></li>
+                  <li><a href="index.php?page=cse-ai">Computer Science & Artificial Intelligence </a></li>
+                  <li><a href="index.php?page=cse-ds">Computer Science & Data Science</a></li>
+                  <li><a href="index.php?page=cse-cy">Computer Science & Cyber Security</a></li>
+                  <li><a href="index.php?page=ise">Information Science & Engineering</a></li>
+                  <li><a href="index.php?page=ece">Electronics and Communication Engineering</a></li>
+                  <li><a href="index.php?page=civil">Civil Engineering</a></li>
+                  <li><a href="index.php?page=mech">Mechanical Engineering</a></li>
                 </ul>
               </div>
               <div class="dropdown-column">
                 <h3>Postgraduate</h3>
                 <ul>
-                  <li><a href="#">Masters in Business Administration</a></li>
-                  <li><a href="#">Masters in Computer Applications</a></li>
-                  <li><a href="#">M Tech - Structural Engineering</a></li>
+                  <li><a href="index.php?page=mba">Masters in Business Administration</a></li>
+                  <li><a href="index.php?page=">Masters in Computer Applications</a></li>
+                  <li><a href="index.php?page=mtech-st">M Tech - Structural Engineering</a></li>
                 </ul>
               </div>
               <div class="dropdown-column">
@@ -65,14 +65,14 @@
                 <ul>
                   <li><a href="#">Housing</a></li>
                   <li><a href="#">Dining</a></li>
-                  <li><a href="../public/sports.php">Sports & Recreation</a></li>
+                  <li><a href="index.php?page=sports">Sports & Recreation</a></li>
                 </ul>
               </div>
               <div class="dropdown-column">
                 <h3>Student Activities</h3>
                 <ul>
                   <li><a href="#">Clubs & Societies</a></li>
-                  <li><a href="../public/cultural.php">Events</a></li>
+                  <li><a href="index.php?page=cultural">Events</a></li>
                   <li><a href="#">Volunteering</a></li>
                 </ul>
               </div>
@@ -80,7 +80,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Library</a>
+          <a href="https://library.svcengg.edu.in/" target="_blank" class="nav-link">Library</a>
         </li>
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">Academics</a>
@@ -169,7 +169,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact Us</a>
+          <a href="index.php?page=cse-ai" class="nav-link">Contact Us</a>
         </li>
       </ul>
       <button id="nav-toggle" aria-label="Toggle menu">

@@ -67,20 +67,35 @@ $_SESSION['last_request_time'] = $time;
 // Determine which page to load
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-// Define a whitelist of allowed pages
-$allowed_pages = ['home', 'civil', 'cse-ai', 'cse-cy', 'cse-ds', 'cse', 'ece', 'ise', 'mba', 'mech', 'mtech-st', 'cultural'];
+// Define a whitelist of allowed pages and their corresponding file names
+$allowed_pages = [
+    'home' => 'home.php',
+    'civil' => 'civil.php',
+    'cse-ai' => 'cse-ai.php',
+    'cse-cy' => 'cse-cy.php',
+    'cse-ds' => 'cse-ds.php',
+    'cse' => 'cse.php',
+    'ece' => 'ece.php',
+    'ise' => 'ise.php',
+    'mba' => 'mba.php',
+    'mech' => 'mech.php',
+    'mtech-st' => 'mtech-st.php',
+    'cultural' => 'cultural.php'
+];
 
-if (!in_array($page, $allowed_pages)) {
-    $page = 'home'; // Default to home if not in whitelist
-}
-
-$page_file = $page . '.php';
-
-if (!file_exists($page_file)) {
+// Check if the requested page is in the whitelist
+if (array_key_exists($page, $allowed_pages)) {
+    $page_file = $allowed_pages[$page];
+    if (file_exists($page_file)) {
+        include $page_file;
+    } else {
+        // File doesn't exist, show 404 error
+        header("HTTP/1.1 404 Not Found");
+        include '404.php';
+    }
+} else {
+    // Page not in whitelist, show 404 error
     header("HTTP/1.1 404 Not Found");
-    $page_file = '404.php';
+    include '404.php';
 }
-
-// Include the requested page
-include $page_file;
 ?>

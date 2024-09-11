@@ -1,12 +1,17 @@
 :root {
-  --navbar-bg: rgba(0, 0, 0, 0);
-  --navbar-bg-scrolled: rgba(0, 0, 0, 0.8);
-  --navbar-text: #e0e0e0;
-  --navbar-hover: #ffffff;
-  --dropdown-bg: rgba(0, 0, 0, 0.9);
+  --navbar-bg: rgba(0, 0, 0, 0.9); /* Main navbar background */
+  --navbar-bg-scrolled: rgba(
+    0,
+    0,
+    0,
+    0.9
+  ); /* Navbar background when scrolled */
+  --navbar-text: #e0e0e0; /* Text color */
+  --navbar-hover: #ffffff; /* Hover color for links */
+  --dropdown-bg: var(--navbar-bg); /* Unified dropdown background with navbar */
   --dropdown-border: rgba(255, 255, 255, 0.1);
-  --accent-color: #0088cc;
-  --hover-color: #0088cc;
+  --accent-color: #0088cc; /* Accent color */
+  --hover-color: #0088cc; /* Hover effect color */
 }
 
 * {
@@ -37,13 +42,13 @@ body {
 }
 
 .nav-container {
+  height: 10dvh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 80px;
 }
 
 .nav-logo {
@@ -163,7 +168,7 @@ body {
 
 @media (max-width: 768px) {
   .nav-container {
-    height: 60px;
+    height: 10dvh;
   }
 
   .nav-menu {
@@ -247,8 +252,9 @@ body {
 }
 
 /* When the navbar is scrolled */
-#nav-navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+#nav-navbar.scrolled,
+.nav-dropdown.scrolled {
+  background-color: var(--navbar-bg-scrolled);
 }
 
 /* Ensure the nav menu is scrollable in mobile view */
