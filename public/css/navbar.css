@@ -35,7 +35,6 @@ body {
   right: 0;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  padding-top: 20px;
 }
 
 #nav-navbar:hover {
@@ -44,12 +43,12 @@ body {
 
 .nav-container {
   height: 10dvh;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20 50px;
+  padding: 0 20px;
 }
 
 .nav-logo {
@@ -62,7 +61,7 @@ body {
 .nav-logo img {
   height: 60px;
   width: 60px;
-  
+  margin-right: 10px;
 }
 
 .nav-logo span {
@@ -82,7 +81,7 @@ body {
 .nav-link {
   color: var(--navbar-text);
   text-decoration: none;
-  padding: 50px 20px;
+  padding: 10px 20px;
   display: block;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -114,7 +113,7 @@ body {
 .dropdown-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 40px 20px;
   display: flex;
   justify-content: space-between;
 }

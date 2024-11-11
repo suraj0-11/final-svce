@@ -80,7 +80,18 @@
           </div>
         </li>
         <li class="nav-item">
+          <a href="https://library.svcengg.edu.in/" target="_blank" class="nav-link">Placements</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://library.svcengg.edu.in/" target="_blank" class="nav-link">Research</a>
+        </li>
+       
+        
+        <li class="nav-item">
           <a href="https://library.svcengg.edu.in/" target="_blank" class="nav-link">Library</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://library.svcengg.edu.in/" target="_blank" class="nav-link">Research</a>
         </li>
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">Academics</a>
@@ -172,52 +183,39 @@
           <a href="index.php?page=cse-ai" class="nav-link">Contact Us</a>
         </li>
         <li class="nav-item has-dropdown">
-          <a href="#" class="nav-link">Placements</a>
-          <div class="nav-dropdown">
-            <div class="dropdown-content">
-              <ul>
-                <li><a href="index.php?page=placement-cell">Placement Cell</a></li>
-                <li><a href="index.php?page=placement-stats">Placement Statistics</a></li>
-                <li><a href="index.php?page=internships">Internship Opportunities</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item has-dropdown">
-          <a href="#" class="nav-link">Research</a>
-          <div class="nav-dropdown">
-            <div class="dropdown-content">
-              <ul>
-                <li><a href="index.php?page=research-centers">Research Centers</a></li>
-                <li><a href="index.php?page=publications">Publications</a></li>
-                <li><a href="index.php?page=projects">Ongoing Projects</a></li>
-                <li><a href="index.php?page=collaborations">Industry Collaborations</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="index.php?page=admissions" class="nav-link">Admissions</a>
-        </li>
-
-        <li class="nav-item has-dropdown">
-          <a href="#" class="nav-link">Quick Links</a>
-          <div class="nav-dropdown">
-            <div class="dropdown-content">
-              <ul>
-                <li><a href="index.php?page=faculty-directory">Faculty Directory</a></li>
-                <li><a href="index.php?page=alumni">Alumni Network</a></li>
-                <li><a href="index.php?page=contact">Contact Us</a></li>
-                <li><a href="index.php?page=faq">FAQs</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
+  <a href="#" class="nav-link">Quick Links</a>
+  <div class="nav-dropdown">
+    <div class="dropdown-content">
+      <div class="dropdown-column">
+        <ul>
+          <li><a href="#">NMIT-LMS</a></li>
+          <li><a href="#">NIRF</a></li>
+          <li><a href="https://drive.google.com/file/d/1sowY67uFiSKXzl1FHZ-unGNQlRAv94pD/view?usp=sharing">NBA</a></li>
+          <li><a href="#">NAAC</a></li>
+          <li><a href="#">IQAC</a></li>
+          <li><a href="#">Mandatory Disclosure</a></li>
+          <li><a href="#">ARIIA</a></li>
+        </ul>
+      </div>
+      <div class="dropdown-column">
+        <ul>
+          <li><a href="#">Credential Verification</a></li>
+          <li><a href="#">Apply for LoR</a></li>
+          <li><a href="#">Application for Certificates</a></li>
+          <li><a href="#">Alumni Association</a></li>
+        </ul>
+      </div>
+      <div class="dropdown-column">
+        <ul>
+          <li><a href="#">Grievance Redressal</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>
 
       </ul>
-      
       <button id="nav-toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
