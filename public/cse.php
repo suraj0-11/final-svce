@@ -16,7 +16,7 @@
 <body>
     <div class="navBar"><?php include __DIR__ . '/../includes/navbar.php'; ?></div>
     <div class="aca-img">
-        <img class="aca-bgimg" src="../assets/bgimages/4.jpg" alt="cse-cy">
+        <img class="aca-bgimg" src="../assets/bgimages/1.jpg" alt="cse-cy">
     </div>
     <div class="aca-navbar">
         <div class="aca-navbar-toggle">
